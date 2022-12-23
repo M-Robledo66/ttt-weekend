@@ -89,17 +89,7 @@ function render () {
     updateBoard()
     updateMessage()
 }
-// function updateBoard() {
-//     for (i = 0; i < board.length; i++){
-//         let currentSqr = squareEls[i]
-//         // currentSqr.textContent = ""
-//         if (board[i]=== -1){
-//             currentSqr.textContent = "O"
-//         } else if(board[i] ===1){
-//             currentSqr.textContent = "X"
-//         }
-//     }
-// }
+
 
 function updateBoard(){
 
@@ -124,7 +114,7 @@ if (boardVal === 1){
 if(!winner && !tie) {
     messageEl.textContent= `its ${turn == 1 ? 'X' : 'O'}'s turn`
     } else if (!winner && tie){
-        messageEl.textContent=`Itssa tie 😮‍💨`
+        messageEl.textContent=`Itssa tie `
     }else{
 messageEl.textContent= `It's ${turn === 1 ? 'X' : 'O'} wins the game!`
     }
